@@ -39,6 +39,7 @@ class App extends Component {
       value: data
     });
   };
+  // complete task function
   completedTask = index => {
     const newTask = [...this.state.item];
     newTask[index].completed = true;
