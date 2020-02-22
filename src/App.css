@@ -1,0 +1,209 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #f9ca24;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+.todo-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-flow: column;
+}
+.App {
+  text-align: center;
+}
+.toto-inner-wrapper {
+  width: 33.333%;
+}
+form {
+  display: flex;
+  justify-content: space-between;
+}
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+.App-link {
+  color: #61dafb;
+}
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.primary-btn {
+  font-size: 15px;
+  color: #fff;
+  font-weight: 700;
+  border: 1px solid transparent;
+  background-color: #1bca9b;
+  border-radius: 4px;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  height: 50px;
+  padding: 0 12px;
+  cursor: pointer;
+  display: inline-block;
+  vertical-align: top;
+  width: 23%;
+}
+.primary-btn-sm {
+  font-size: 13px;
+  color: #fff;
+  border: 1px solid transparent;
+  background-color: #1bca9b;
+  border-radius: 4px;
+  padding: 4px 7px;
+  cursor: pointer;
+  display: inline-block;
+  vertical-align: top;
+}
+.primary-btn:disabled {
+  opacity: 0.8;
+  cursor: not-allowed;
+  filter: blur(1px);
+}
+.input-box {
+  font-size: 18px;
+  font-weight: 700;
+  height: 48px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  border-radius: 4px;
+  border: 1px solid transparent;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  padding: 0 12px;
+  display: inline-block;
+  width: 100%;
+}
+input,
+button {
+  font-family: inherit;
+}
+.input-box:focus {
+  border: 1px solid #1bca9b;
+  border-radius: 4px;
+  border-top-right-radius: 0;
+  outline: none;
+  border-bottom-right-radius: 0;
+}
+button:focus {
+  outline: 0;
+}
+.btn-danger {
+  background: #ea425c;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  color: #ffffff;
+  padding: 5px;
+  font-size: 12px;
+  border-radius: 100%;
+  width: 28px;
+  height: 28px;
+  cursor: pointer;
+}
+.todo-list {
+  flex-direction: column;
+  justify-content: center;
+  display: flex;
+  background-color: #ffffff;
+  margin-top: 10px;
+  border: 1px solid #eee;
+  box-shadow: 12px 12px #ffffff;
+}
+.todo-list ul {
+  padding: 0 15px 0 15px;
+}
+.todo-list li {
+  list-style: none;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  border-bottom: 1px solid #eee;
+  display: flex;
+  justify-content: space-between;
+}
+.margin-right-12 {
+  margin-right: 12px;
+}
+.heart {
+  background-color: red;
+  display: inline-block;
+  height: 30px;
+  margin: 0 25px 0 25px;
+  position: relative;
+  top: 0;
+  transform: rotate(-45deg);
+  width: 30px;
+}
+
+.heart:before,
+.heart:after {
+  content: "";
+  background-color: red;
+  border-radius: 50%;
+  height: 30px;
+  position: absolute;
+  width: 30px;
+}
+
+.heart:before {
+  top: -15px;
+  left: 0;
+}
+
+.heart:after {
+  left: 15px;
+  top: 0;
+}
+.love-js {
+  font-size: 55px;
+  font-weight: 700;
+  text-align: center;
+  margin-top: 20px;
+}
+.txt-center {
+  text-align: center;
+}
+
+@media (max-width: 1023px) {
+  .toto-inner-wrapper {
+    width: 87%;
+  }
+  .todo-wrapper {
+    padding-bottom: 40px;
+  }
+  .primary-btn {
+    width: 40%;
+  }
+}
